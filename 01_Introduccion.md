@@ -191,7 +191,9 @@ objectos
 
 ## Fundamentos de jQuery 12:13
 
-[JQuery](https://jquery.com/) optimiza el código JS
+[JQuery](https://jquery.com/) usa menos líneas de código que JS.
+
+[JQuery Plugings](https://www.jqueryscript.net/)
 
 Para llamar usar JQuery CDN desde HTML:
 
@@ -206,6 +208,3 @@ Para llamar usar JQuery CDN desde HTML:
 </body>
 </html>
 ```
-
-
-
