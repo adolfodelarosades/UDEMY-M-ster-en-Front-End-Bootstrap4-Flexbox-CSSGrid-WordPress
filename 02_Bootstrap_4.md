@@ -131,7 +131,11 @@ Me puedo auxiliar de las herramientas de desarrollador para ver el Diseño Respo
 
 **En cualquiera de estos 12 tamaños puedo tener hasta 12 columnas**
 
+<img src="images/c2/2-col-1.png">
 
+
+
+<img src="images/c2/2-col-2.png">
 
 
 ## Las Clases CSS de Bootstrap 4 - Parte 1 18:43
