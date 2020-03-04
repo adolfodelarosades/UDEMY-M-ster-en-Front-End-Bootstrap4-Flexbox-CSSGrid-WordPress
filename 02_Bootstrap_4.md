@@ -133,8 +133,6 @@ Me puedo auxiliar de las herramientas de desarrollador para ver el Diseño Respo
 
 <img src="images/c2/2-col-1.png">
 
-
-
 <img src="images/c2/2-col-2.png">
 
 
@@ -144,6 +142,4 @@ Me puedo auxiliar de las herramientas de desarrollador para ver el Diseño Respo
 
 ## Diviértete con Bootstrap 4 03:25
 
-## Aterrizando conceptos de Bootstrap 4 
-
-## 12 preguntas
+## Aterrizando conceptos de Bootstrap 4 - 12 preguntas
