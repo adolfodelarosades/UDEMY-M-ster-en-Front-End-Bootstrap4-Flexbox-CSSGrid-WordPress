@@ -93,7 +93,46 @@ Y en mi archivo HTML hacer el llamado a mis archivos locales:
 </html>
 ```
 
-## Sistema de Rejillas 19:05
+<img src="images/c2/2-referencias.png">
+
+[Referencias](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
+
+## Sistema de Grids (Rejillas) 19:05
+
+[Grid System](https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp)
+
+<img src="images/c2/2-rejilla.png">
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+[Código tomado de 2. **Bootstrap 4 is mobile-first**](https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp)
+
+Este código va dentro de la HEAD.
+
+<img src="images/c2/2-resolucion.png">
+
+En el sistema de Grids o Rejillas Bootstrap usa un máximo de 12 columnas.
+
+Independiente del tamaño de pantalla nosotros trabajaremos con columnas.
+
+<img src="images/c2/2-grids.png">
+
+Me puedo auxiliar de las herramientas de desarrollador para ver el Diseño Responsive y cambiar a los tamaños de resoluciones permitidos.
+
+* Full HD - HD: 1920px
+* Portatil: 1366px
+* Tablet Horizontal: 1024px
+* Tablet Vertical 768px
+* Móvil Horizontal: 576px
+* Móvil Vertical: 320px
+
+<img src="images/c2/2-responsive.png">
+
+**En cualquiera de estos 12 tamaños puedo tener hasta 12 columnas**
+
+
+
 
 ## Las Clases CSS de Bootstrap 4 - Parte 1 18:43
 
