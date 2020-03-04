@@ -61,10 +61,151 @@ Lenguajes del Front End
 
 ## Fundamentos de HTML5 13:32
 
+Estructura básica de HTML.
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+Algunas etiquetas que se usan en HTML son:
+
+```html
+<div></div>
+
+<header></header>
+
+<nav></nav>
+
+<section></section>
+
+<article></article>
+
+<footer></footer>
+
+<video src=""></video>
+
+<audio src=""></audio>
+```
 
 ## Fundamentos de CSS3 12:03
 
+Nos permite dar estilo a nuestro sitio Web.
+
+Archivo con extensión `.css`
+
+Para llamar un archivo CSS desde HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+```
+
+`style.css`:
+
+```css
+/*Reglas CSS*/
+
+#myId{
+   padding: 30px;
+   background: red;
+   color: yellow;
+}
+
+.myClass{
+   padding: 20px;
+   background: blue;
+   color: white;
+}
+
+div{
+   padding: 10px;
+   background: white;
+   color: white;
+}
+
+div#myId{
+   padding: 30px;
+   background: red;
+   color: yellow;
+}
+
+div.myClass{
+   padding: 20px;
+   background: blue;
+   color: white;
+}
+
+```
+
 ## Fundamentos de Javascript 18:08
 
+JS permite hacer dinámico nuestro sitio Web. 
+
+Archivo con extensión `.js`
+
+Para llamar un archivo JS desde HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+</head>
+<body>
+```
+
+`script.js`
+
+```js
+// Variables
+/*
+texto
+numeros
+booleans
+arrays
+objectos
+*/
+
+//Condiciones
+
+// Funciones
+
+// Eventos
+
+```
+
 ## Fundamentos de jQuery 12:13
+
+[JQuery](https://jquery.com/) optimiza el código JS
+
+Para llamar usar JQuery CDN desde HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+</body>
+</html>
+```
+
+
+
