@@ -23,7 +23,7 @@ https://w3layouts.com/
 
 ## Instalación de Bootstrap 4 11:26
 
-<img src="images/c2/2-instalar.png">
+<img src="images/c2/2-intalar.png">
 
 ### 1. Usando CDN
 
