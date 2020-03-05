@@ -252,6 +252,8 @@ Si en lugar de `container-fluid` usamos `container` tenemos:
 
 Tambien podemos ver la vista responsiva para cada uno de los tamaños de dispositivos:
 
+<img src="images/c2/2-320.png">
+
 <img src="images/c2/2-540.png">
 
 <img src="images/c2/2-720.png">
@@ -261,6 +263,76 @@ Tambien podemos ver la vista responsiva para cada uno de los tamaños de disposi
 <img src="images/c2/2-1140.png">
 
 ## Las Clases CSS de Bootstrap 4 - Parte 1 18:43
+
+[Bootstrap 4 Class Reference](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
+
+
+[¿Diseño web responsive o diseño web mobile first?](https://www.novvamarketing.com/blog-marketing-digital/diseno-web-responsive-o-diseno-web-mobile-first/)
+
+Hay dos opciones de empezar el diseño:
+
+* Responsive
+* Mobile First
+
+<img src="images/c2/2-diseno.png">
+
+### Colores 
+
+Los colores podemos verlos en [Bootstrap 4 Colors](https://www.w3schools.com/bootstrap4/bootstrap_colors.asp)
+
+#### Text Colors
+
+Las clases para el color de los textos son: 
+
+`.text-muted`, `.text-primary`, `.text-success`, `.text-info`, `.text-warning`, `.text-danger`, `.text-secondary`, `.text-white`, `.text-dark`, `.text-body` (default body color/often black) and `.text-light`:
+
+Ejemplo:
+
+`textColor.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body> 
+    <div class="container">
+        <h2>Colores contextuales</h2>
+        <p>Utilice las clases contextuales para proporcionar "significado a través de colores":</p>
+        <p class="text-muted">Este texto está silenciado.</p>
+        <p class="text-primary">Este texto es importante.</p>
+        <p class="text-success">Este texto indica éxito.</p>
+        <p class="text-info">Este texto representa alguna información.</p>
+        <p class="text-warning">Este texto representa una advertencia.</p>
+        <p class="text-danger">Este texto representa peligro.</p>
+        <p class="text-secondary">Texto secundario.</p>
+        <p class="text-dark">Texto gris oscuro.</p>
+        <p class="text-body">Color de default del body (a menudo negro).</p>
+        <p class="text-light">Este texto es gris claro (sobre fondo blanco)</p>
+        <p class="text-white">Este texto es blanco (sobre fondo blanco)</p>
+      </div>
+</body>
+</html>
+```
+
+<img src="images/c2/2-text-color.png">
+
 
 ## Las Clases CSS de Bootstrap 4 - Parte 2 13:50
 
