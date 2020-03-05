@@ -284,7 +284,7 @@ Los colores podemos verlos en [Bootstrap 4 Colors](https://www.w3schools.com/boo
 
 Las clases para el color de los textos son: 
 
-`.text-muted`, `.text-primary`, `.text-success`, `.text-info`, `.text-warning`, `.text-danger`, `.text-secondary`, `.text-white`, `.text-dark`, `.text-body` (default body color/often black) and `.text-light`:
+`.text-muted`, `.text-primary`, `.text-success`, `.text-info`, `.text-warning`, `.text-danger`, `.text-secondary`, `.text-white`, `.text-dark`, `.text-body` (default color del body /frecuentemente negro) and `.text-light`:
 
 Ejemplo:
 
@@ -333,6 +333,56 @@ Ejemplo:
 
 <img src="images/c2/2-text-color.png">
 
+### Background Colors
+
+Las clases para los colores de fondo son: `.bg-primary`, `.bg-success`, `.bg-info`, `.bg-warning`, `.bg-danger`, `.bg-secondary`, `.bg-dark` y `.bg-light`.
+
+Tenga en cuenta que los colores de fondo no establecen el color del texto, por lo que en algunos casos querrá usarlos junto con una clase `.text-*`.
+
+Ejemplo:
+
+`backgroundColor.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body> 
+    <div class="container">
+        <h2>Contextual Backgrounds</h2>
+        <p>Utilice las clases contextual background para proporcionar  "significado a través de colores".</p>
+        <p>Tenga en cuenta que también puede agregar una clase .text- * si desea un color de texto diferente:</p>
+        <p class="bg-primary text-white">Este texto es importante.</p>
+        <p class="bg-success text-white">Este texto indica éxito.</p>
+        <p class="bg-info text-white">Este texto representa alguna información.</p>
+        <p class="bg-warning text-white">Este texto representa una advertencia.</p>
+        <p class="bg-danger text-white">Este texto representa peligro.</p>
+        <p class="bg-secondary text-white">SColor de fondo secundario.</p>
+        <p class="bg-dark text-white">Color de fondo gris oscuro.</p>
+        <p class="bg-light text-dark">Color de fondo gris claro.</p>        
+      </div>
+</body>
+</html>
+```
+
+<img src="images/c2/2-background-color.png">
 
 ## Las Clases CSS de Bootstrap 4 - Parte 2 13:50
 
