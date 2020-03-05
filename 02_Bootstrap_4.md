@@ -135,6 +135,130 @@ Me puedo auxiliar de las herramientas de desarrollador para ver el Diseño Respo
 
 <img src="images/c2/2-col-2.png">
 
+[Grid Options](https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp)
+
+### Trabajar con Sistemas de Grids de Bootstrap
+
+Lo primero que debemos definir en un sistema Grid de Bootstrap es un **Contenedor** y tenemos dos tipos:
+
+* **`container`**
+* **`container-fluid`**
+
+Si usamos `container` tendremos **tamaños fijos para el contenedor según el tamaño del dispositivo** que estemos usando, como podemos ver en la siguiente tabla:
+
+<img src="images/c2/2-container.png">
+
+Si en lugar de usar `container` usamos `container-fluid` el contenedor usara todo el ancho de la página independientemente del dispositivo que usemos.
+
+```html
+<body> 
+    <div class="container-fluid">
+
+    </div>
+</body>
+```
+
+Dentro del contenedor tendremos filas o renglones las cuales definimos con la clase `row`:
+
+```html
+<body> 
+    <div class="container-fluid">
+        <div class="row">
+
+        </div>
+    </div>
+</body>
+```
+
+Dentro de la fila creamos nuestras columnas con la diferentes clases que tenemos:
+
+* `col-N`
+* `col-sm-N`
+* `col-md-N`
+* `col-lg-N`
+* `col-xl-N`
+
+**N**: Número del 1-12
+
+```html
+<body> 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">Col 12</div>
+            <div class="col-6">Col 6</div>
+            <div class="col-6">Col 6</div>
+        </div>
+    </div>
+</body>
+```
+
+Veamos el siguiente código y su salida:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body> 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-danger">Col 12</div>
+            
+            <div class="col-6 bg-primary">Col 6</div>
+            <div class="col-6 bg-secondary">Col 6</div>
+            
+            <div class="col-4 bg-success">Col 4</div>
+            <div class="col-4 bg-warning">Col 4</div>
+            <div class="col-4 bg-info">Col 4</div>
+            
+            <div class="col-3 badge-danger">Col 3</div>
+            <div class="col-3 bg-primary">Col 3</div>
+            <div class="col-3 bg-secondary">Col 3</div>
+            <div class="col-3 bg-success">Col 3</div>            
+            
+            <div class="col-2 bg-success">Col 2</div>
+            <div class="col-2 badge-warning">Col 2</div>
+            <div class="col-2 bg-info">Col 2</div>
+            <div class="col-2 badge-danger">Col 2</div>
+            <div class="col-2 bg-primary">Col 2</div>
+            <div class="col-2 bg-secondary">Col 2</div>            
+        </div>
+    </div>
+</body>
+</html>
+```
+
+<img src="images/c2/2-columnas.png">
+
+Si en lugar de `container-fluid` usamos `container` tenemos:
+
+<img src="images/c2/2-columnas-2.png">
+
+Tambien podemos ver la vista responsiva para cada uno de los tamaños de dispositivos:
+
+<img src="images/c2/2-540.png">
+
+<img src="images/c2/2-720.png">
+
+<img src="images/c2/2-960.png">
+
+<img src="images/c2/2-1140.png">
 
 ## Las Clases CSS de Bootstrap 4 - Parte 1 18:43
 
