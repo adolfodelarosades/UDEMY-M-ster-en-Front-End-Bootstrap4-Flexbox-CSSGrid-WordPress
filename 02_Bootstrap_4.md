@@ -654,7 +654,16 @@ Aquí vamos a personalizar las columnas para cada dispositivo para que los boton
 
 <img src="images/c2/2-b-1920.png">
 
+Conviene repasar las clases para ocultar documentos.
+
+[Other Display Classes](https://www.w3schools.com/bootstrap4/bootstrap_utilities.asp)
 
 ## Diviértete con Bootstrap 4 03:25
+
+Revisar las siguientes páginas para ver ejemplos de todas las clases de Bootstrap 4.
+
+[Bootstrap 4 Cheat Sheet](https://hackerthemes.com/bootstrap-cheatsheet/)
+
+[Bootstrap 4 Tutorial](https://www.w3schools.com/bootstrap4/default.asp)
 
 ## Aterrizando conceptos de Bootstrap 4 - 12 preguntas
