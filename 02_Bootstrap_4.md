@@ -540,6 +540,21 @@ Bootstrap 4 Carousel](https://www.w3schools.com/bootstrap4/bootstrap_carousel.as
 <img src="images/c2/2-carrusel-2.png">
 <img src="images/c2/2-carrusel-3.png">
 
+Si lo vemos en la vista Responsive en los diferentes tamaños tenemos:
+
+<img src="images/c2/2-c-320.png">
+
+<img src="images/c2/2-c-540.png">
+
+<img src="images/c2/2-c-720.png">
+
+<img src="images/c2/2-c-960.png">
+
+<img src="images/c2/2-c-1140.png">
+
+
+
+
 
 ## Las Clases CSS de Bootstrap 4 - Parte 2 13:50
 
