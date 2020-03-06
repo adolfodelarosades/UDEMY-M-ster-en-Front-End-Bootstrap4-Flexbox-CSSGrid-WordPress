@@ -30,6 +30,8 @@
 * Videos
 * Crear Estructura del proyecto
 
+<img src="images/c7/7-1-estructura.png">
+
 #### Consejo para Desarrollar el Diseño
 
 Abrir 5 navegadores páginas del navegador para ver la página en sus diferentes tamaños.
@@ -44,6 +46,35 @@ Tener disponibles las siguientes dos páginas:
 
 1. [Bootstrap 4](https://www.w3schools.com/bootstrap4/default.asp)
 2. [Font Awesome](https://fontawesome.com/)
+
+### Inicializar Estilos CSS
+
+En nuestro archivo `style.css` inicializaremos algunos elementos:
+
+```css
+/*=============================================
+GLOBAL
+=============================================*/
+
+*{
+	font-family: 'Roboto', sans-serif;
+	font-weight:900;
+	
+}
+
+a, h1, h2, h3, h4, h5, h6, button, select, option, .input-group, input, .input-group-text, textarea, .nav-link{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul, ol{
+	list-style: none;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+	list-style: none;
+	text-decoration: none;
+}
+```
 
 
 ## Construyendo el Header 19:47
