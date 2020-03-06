@@ -554,6 +554,107 @@ Si lo vemos en la vista Responsive en los diferentes tamaños, veremos como los 
 
 ## Las Clases CSS de Bootstrap 4 - Parte 2 13:50
 
+Aquí vamos a personalizar las columnas para cada dispositivo para que los botones se vean bien.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body> 
+
+    <!-- ================================================================
+    CABECERA
+    ==================================================================-->
+    <div class="container-fluid p-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-2 col-xl-2 p-3 border text-center">Logotipo</div>
+                <div class="col-5 col-sm-5 col-md-5 d-none d-xl-block col-xl-5 p-1 p-md-3 border text-md-right text-center"></div>
+                <div class="col-12 col-md-2 col-xl-1 p-1 p-md-3 border text-md-right text-center">Botón 1</div>
+                <div class="col-12 col-md-2 col-xl-1 p-1 p-md-3 border text-md-right text-center">Botón 2</div>
+                <div class="col-12 col-md-2 col-xl-1 p-1 p-md-3 border text-md-right text-center">Botón 3</div>
+                <div class="col-12 col-md-2 col-xl-1 p-1 p-md-3 border text-md-right text-center">Botón 4</div>
+                <div class="col-12 col-md-2 col-xl-1 p-1 p-md-3 border text-md-right text-center">Botón 5</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================================
+    SLIDE
+    ==================================================================-->
+    <div class="container-fluid p-0">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="Los Angeles" width="100%" >
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                    </div>   
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="Chicago" width="100%" >
+                    <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div>   
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="New York" width="100%" >
+                    <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div>   
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
+```
+
+<img src="images/c2/2-b-320.png">
+
+<img src="images/c2/2-b-576.png">
+
+<img src="images/c2/2-b-768.png">
+
+<img src="images/c2/2-b-1024.png">
+
+<img src="images/c2/2-b-1366.png">
+
+<img src="images/c2/2-b-1920.png">
+
+
 ## Diviértete con Bootstrap 4 03:25
 
 ## Aterrizando conceptos de Bootstrap 4 - 12 preguntas
