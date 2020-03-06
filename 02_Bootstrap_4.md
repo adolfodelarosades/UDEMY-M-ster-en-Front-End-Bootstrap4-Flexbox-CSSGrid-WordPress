@@ -384,6 +384,66 @@ Ejemplo:
 
 <img src="images/c2/2-background-color.png">
 
+### Margins y Paddings
+
+[More Spacing Examples](https://www.w3schools.com/bootstrap4/bootstrap_utilities.asp)
+
+class          |  acción
+---------------|---------------------
+.m-# / m-*-#   | margin on all sides	
+.mt-# / mt-*-# | margin top	
+.mb-# / mb-*-# | margin bottom	
+.ml-# / ml-*-# | margin left	
+.mr-# / mr-*-# | margin right	
+.mx-# / mx-*-# | margin left and right	
+.my-# / my-*-# | margin top and bottom	
+.p-# / p-*-#   | padding on all sides	
+.pt-# / pt-*-# | padding top	
+.pb-# / pb-*-# | padding bottom	
+.pl-# / pl-*-# | padding left	
+.pr-# / pr-*-# | padding right	
+.py-# / py-*-# | padding top and bottom	
+.px-# / px-*-# | padding left and right
+
+Ejemplo
+
+`marginPadding.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body> 
+    <div class="container">
+        <h1>Utilidades de Espaciado</h1>
+        <p>Establezca el espaciado de un elemento con las clases {property}{sides}-{breakpoint}-{size} classes. Omita breakpoint si desea que el relleno o el margen funcionen en todos los tamaños de pantalla.</p>
+        <div class="pt-4 bg-warning">Solo tengo un top padding (1.5rem = 24px)</div>
+        <div class="p-5 bg-success">Tengo un padding on all sides (3rem = 48px)</div>
+        <div class="m-5 pb-5 bg-info">Tengo un margin en todos los lados (3rem = 48px) y un bottom padding (3rem = 48px)</div>
+    </div>
+</body>
+</html>
+```
+
+<img src="images/c2/2-espaciado.png">
+
 ## Las Clases CSS de Bootstrap 4 - Parte 2 13:50
 
 ## Diviértete con Bootstrap 4 03:25
