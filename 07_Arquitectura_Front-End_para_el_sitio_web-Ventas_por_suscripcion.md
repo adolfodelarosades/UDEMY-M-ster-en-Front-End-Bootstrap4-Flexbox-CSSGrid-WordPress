@@ -98,6 +98,49 @@ Si damos un click en el menú hamburguesa vemos lo siguiente:
 Vamos a construir esta cabecera.
 
 
+```html
+<!--=====================================
+HEADER
+======================================-->
+
+<header>
+
+	<div class="container-fluid">
+		
+		<div class="container p-0">
+
+			<div class="row">
+
+				<!-- LOGO -->
+			
+				<div class="col-7 col-sm-5 col-md-4 col-lg-2 col-xl-3 my-3 d-flex logotipo mt-lg-4 mt-xl-3">
+
+
+				</div>
+
+				<!-- BOTONERA -->
+
+				<div class="d-none d-lg-block col-lg-8 col-xl-6 p-0 pt-4 botonera">
+					
+
+				</div>	
+
+				<!-- IDIOMA E INGRESO -->
+
+				<div class="col-5 col-sm-7 col-md-8 col-lg-2 col-xl-3 p-0 pt-4">
+
+
+				</div>	
+
+			</div>
+
+		</div>
+
+	</div>
+
+</header>	
+```
+
 
 ## Hero Image - Cinemagraph 16:13
 ## Construyendo la sección de Cursos 13:41
