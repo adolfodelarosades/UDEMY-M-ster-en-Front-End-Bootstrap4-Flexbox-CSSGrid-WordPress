@@ -646,10 +646,6 @@ HEADER
 
 </header>	
 
-
-
-
-
 <script src="js/script.js"></script>
 
 </body>
@@ -668,6 +664,43 @@ Las pantallas de salida son:
 <img src="images/c7/7-2-576-1.png">
 
 <img src="images/c7/7-2-320-1.png">
+
+### Estilos para el Header
+
+Vamos a meter en nuestro archivo `styles.css` los siguientes estilos:
+
+```css
+/*=============================================
+HEADER
+=============================================*/
+
+header{
+	position: fixed;		// Posición fija
+	z-index: 2;			// Pone por encima, lo adelanta en la capa Z
+	width:100%;			// Ancho 100%
+	top:0;				// Top de 0
+	left:0;				// Left de 0 (Empezar coordenada (0,0)
+	background:rgba(0,0,0,.1);	// Esto es un Background Negro con un mucha transparencia  (.9 poca transparencia)
+}
+
+.botonera li{	// botonera es la div a la que le pusimos ese nombre, dentro tiene ul y dentro los li
+	cursor:pointer;
+}
+
+.botonera li:hover{			// hover es cuando pasamos encima de la opción
+	border-bottom:3px solid white;	// borde inferior de 3px solido y blanco
+}
+```
+
+`header` Pone un color de fondo a todo nuestro header (He quitado el `bg-primary`)
+`.botonera li` Coloca una manita cuando apuntemos a cada opción del menú, mas formas en[CSS cursor Property](https://www.w3schools.com/cssref/pr_class_cursor.asp)
+`.botonera li:hover` Coloca una barra bajo el nombre de la opción seleccionada
+
+Veamos los cambios
+
+<img src="images/c7/7-2-menu.png">
+
+
 
 ## Hero Image - Cinemagraph 16:13
 ## Construyendo la sección de Cursos 13:41
