@@ -726,21 +726,13 @@ Con estos cambios la opción ya se ve más pequeña
 
 <img src="images/c7/7-2-menu-4.png">
 
-#### Diseño en las Diferentes Resoluciones
-
-`col-5` 5 columnas para dispositivos extra small (575px ↓)
-`col-sm-7` 7 columnas para dispositivos small (576px ↑)
-`col-md-8` 8 columnas para dispositivo medium (768px ↑)
-`col-lg-2` 2 columnas para dispositivos large (992px ↑)
-`col-xl-3` 3 columnas para dispositivos xlarge (1200px ↑)
-
-#### Resolución 1200 o superior
+#### Problemas en Resolución 1200 o superior
 
 Si vemos la resolución para un dispositivos xlarge (1200px ↑) paracere que se ve todo bien.
 
 <img src="images/c7/7-2-1200-2.png">
 
-#### Resolución 992 o superior
+#### Problemas en Resolución 992 o superior Probar con 1024 x 768 (Tablet Horizontal)
 
 Vamos a mirar la resolución 1024 x 768 (Tablet Horizontal) , que sería para dispositivos large (992px ↑)
 
@@ -814,6 +806,82 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
 	}
 }
 ```
+
+Como ya vimos si solo se cambia el tamaño a `10px` las opciones del botón se quedan abajo.
+
+<img src="images/c7/7-2-1024-6.png">
+
+Vemos que el botón tiene padding en todos lados. Lo que se hace aquí es forzar a subir el botón modificando el margen superior y por otro lado eliminamos el padding inferior. Nos queda así: 
+
+<img src="images/c7/7-2-1024-7.png">
+
+Si observamos bien el Idioma se come parte de los Ingreso es cosa de unos pixeles pero más o menos se ve bien.
+
+#### Problemas en Resolución 768px o superior Probar con 768 x 1024  (Tablet Vertical)
+
+Podemos ver como se ve actualmente la página en esta resolución:
+
+<img src="images/c7/7-2-768-2.png">
+
+Como podemos apreciar las opciones de Idioma e Ingresos estan ligueramente abajo. Si inspeccionamos el código vemos el estilo actual para ver que se puede mejorar.
+
+<img src="images/c7/7-2-768-3.png">
+
+Vamos a crear un punto de ruptura para esta resolución.
+
+```css
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	header .ingresos button{
+		margin-top:-10px;		// Se cube un poco el botón
+		padding-bottom:0px;		// Se quita el padding bottom
+	}
+
+
+	header .ingresos button a{
+		font-size:18px;			// Se incrementa el tamaño del texto de 14px a 18px
+		padding-bottom:5px;		// Se pone un paddin*bottom de 5px
+	}
+}
+```
+
+Nos queda así:
+
+<img src="images/c7/7-2-768-4.png">
+
+Como podemos ver mejoro pero aun tiene un pequeño detalle, la barra de separación quedo con menor tamaño, por lo que habría que aplicar el mismo tamañño tambien al span:
+
+```css
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	header .ingresos button{
+		margin-top:-10px;		// Se cube un poco el botón
+		padding-bottom:0px;		// Se quita el padding bottom
+	}
+
+
+	header .ingresos button a, span{
+		font-size:18px;			// Se incrementa el tamaño del texto de 14px a 18px
+		padding-bottom:5px;		// Se pone un paddin*bottom de 5px
+	}
+}
+```
+Finalmente queda así:
+
+<img src="images/c7/7-2-768-5.png">
+
+
+`col-5` 5 columnas para dispositivos extra small (575px ↓)
+`col-sm-7` 7 columnas para dispositivos small (576px ↑)
+`col-md-8` 8 columnas para dispositivo medium (768px ↑)
 
 ## Hero Image - Cinemagraph 16:13
 ## Construyendo la sección de Cursos 13:41
