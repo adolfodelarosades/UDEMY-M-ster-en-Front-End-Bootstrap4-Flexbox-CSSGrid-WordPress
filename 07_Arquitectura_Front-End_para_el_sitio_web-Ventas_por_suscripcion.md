@@ -23,6 +23,7 @@
 
 * [Brief](https://github.com/adolfodelarosades/UDEMY-M-ster-en-Front-End-Bootstrap4-Flexbox-CSSGrid-WordPress/blob/master/pdf/Brief%20y%20Concepto%20-%20ventas%20por%20suscripci%C2%A2n.pdf)
 * Site Map
+
    <img src="images/c0/Sitemap.png">
 * [Wireframe PC](https://marvelapp.com/eggg919/screen/48145028)
 * [Wireframe para móviles](https://marvelapp.com/44j77e0/screen/48223352)
@@ -80,6 +81,7 @@ a:visited, a:link, a:focus, a:hover, a:active{
 
 ## Construyendo el Header 19:47
 
+<img src="images/c7/7-2-titulo-header.png">
 
 Si observo el [Layout PC](https://marvelapp.com/eggg919/screen/48785985) el header consta de 3 partes:
 
