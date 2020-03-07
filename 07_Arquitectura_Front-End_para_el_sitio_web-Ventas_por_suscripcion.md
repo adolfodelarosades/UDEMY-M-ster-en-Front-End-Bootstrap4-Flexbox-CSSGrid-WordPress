@@ -913,9 +913,37 @@ El resultado final es:
 
 <img src="images/c7/7-2-576-3.png">
 
-`col-5` 5 columnas para dispositivos extra small (575px ↓)
-`col-sm-7` 7 columnas para dispositivos small (576px ↑)
-`col-md-8` 8 columnas para dispositivo medium (768px ↑)
+#### Problemas en Resolución Inferior a 576px Probar con 320 x 576 (Movil Vertical)
+
+Podemos ver como se ve actualmente la página en esta resolución:
+
+<img src="images/c7/7-2-320-2.png">
+
+Básicamente vemos que tiene dos problemas en su diseño, las opciones estan ligeramente abajo y el texto tiene un tamaño muy grande. Vamos a crear el punto de quiebre de esta resolución:
+
+```css
+/*=============================================
+MOVIL VERTICAL (revisamos en 320px)
+=============================================*/
+
+@media (max-width:575px){
+
+	header .ingresos button{
+	 	margin-top:-10px;	// Subir 10 pixeles el botón
+	 	padding-bottom:0px;
+	 }
+
+
+	 header .ingresos button a{
+	 	font-size:12px;		// Reducir el texto de 14px a 12px
+	 }
+
+}
+```
+
+El resultado final es:
+
+<img src="images/c7/7-2-320-3.png">
 
 ## Hero Image - Cinemagraph 16:13
 ## Construyendo la sección de Cursos 13:41
