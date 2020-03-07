@@ -284,7 +284,122 @@ Tenemos una imagen con un enlace a nuestra página `index.htlm`
 `img-fluid` La clase `.img-fluid` aplica `max-width: 100%;` y `height: auto;` a la imagen.  La imagen se escalará bien al elemento padre. 
 `pt-1` padding top de 1 unidad
 
-####  De
+#### Detalle de la Botonera
+
+Vamos a meter el contenido dentro de la seccion de la botonera.
+
+Segun la documentación de [Bootstrap 4 Navs](https://www.w3schools.com/bootstrap4/bootstrap_navs.asp) Si desea crear un menú horizontal simple, agregue la clase `.nav` a un elemento `<ul>`, seguido de `.nav-item` para cada `<li>` y agregue la clase `.nav-link` a sus enlaces:
+
+```html
+<!-- BOTONERA -->
+
+<div class="d-none d-lg-block col-lg-8 col-xl-6 p-0 pt-lg-2 mt-lg-1 pt-xl-4 botonera">
+					
+	<ul class="nav justify-content-lg-left justify-content-xl-end">
+						
+		<li class="nav-item">
+			<a class="nav-link text-white" href="#cursos">Cursos</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link text-white" href="#nosotros">Nosotros</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link text-white" href="#testimonios">Testimonios</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link text-white" href="#planes">Planes</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link text-white" href="#faq">FAQ</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link text-white" href="#">Blog</a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link text-white" href="#contactenos">Contáctenos</a>
+		</li>
+
+	</ul>
+
+</div>	
+```
+
+La botonera incluye un elemento `ul`:
+
+```html
+<ul class="nav justify-content-lg-left justify-content-xl-end">
+```
+
+`nav` clase `nav`
+`justify-content-lg-left` justifica el contenido a la izquierda para dispositivos large (992px ↑)
+`justify-content-xl-end` justifica el contenido al final para dispositivos xlarge (1200px ↑)
+
+Y dentro del `ul` incluye sus elemento `li`
+
+```html
+<li class="nav-item">
+	<a class="nav-link text-white" href="#cursos">Cursos</a>
+</li>
+```
+
+Con sus respectivos enlaces(internos).
+
+#### Detalle de Idiomas e Ingreso
+
+Dentro de esta sección de Idiomas e Ingreso tendremos dos bloques uno para Idimas y otro para Ingresos:
+
+```html
+<!-- IDIOMA E INGRESO -->
+
+<div class="col-5 col-sm-7 col-md-8 col-lg-2 col-xl-3 p-0 pt-4 pt-lg-2 mt-lg-1 pt-xl-4">
+
+	<!-- IDIOMA -->
+					
+	<div class="ml-xl-4 float-left mt-lg-1 d-none d-lg-block">
+
+		<div class="dropdown">
+
+			<button type="button" class="btn btn-light btn-sm dropdown-toggle" data-toggle="dropdown">
+				ES
+			</button>
+
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">EN</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- INGRESO -->
+
+	<div class="mr-2 mr-lg-0 float-right pt-1 ingresos">
+						
+		<button class="btn btn-info btn-sm d-flex">
+							
+			<a href="ingreso.html" class="text-white">Ingresar</a>
+
+			<span class="text-white mx-2">|</span>
+
+			<a href="registro.html" class="text-white">Crear Cuenta</a>
+			
+		</button>
+
+	</div>
+
+</div>	
+
+
+```
+
+
+
 
 ## Hero Image - Cinemagraph 16:13
 ## Construyendo la sección de Cursos 13:41
