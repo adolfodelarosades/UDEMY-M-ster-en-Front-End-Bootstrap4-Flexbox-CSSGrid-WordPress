@@ -109,9 +109,15 @@ clase | Descripción
 `.col-lg-` | (large devices - ancho de pantalla igual o mayor que 992px)
 `.col-xl-` | (xlarge devices - ancho de pantalla igual o mayor que 1200px)
 
-Vamos a construir esta cabecera.
+### Construir Cabecera o Menú
 
+Vamos a construir esta cabecera. Sabemos que el Header se compone de tres secciones:
 
+* Logotipo
+* Botonera
+* Idioma e Ingreso
+
+Nuestro código para construir estas tres secciones en el Header es el siguiente
 ```html
 <!--=====================================
 HEADER
@@ -155,13 +161,7 @@ HEADER
 </header>	
 ```
 
-Podemos ver las tres secciones de las que consta el header:
-
-* Logotipo
-* Botonera
-* Idioma e Ingreso
-
-En el Logo tenemos:
+** Descripción Sección Logo**
 
 ```html
 <!-- LOGO -->
@@ -172,11 +172,11 @@ En el Logo tenemos:
 </div>
 ```
 
-`col-xl-3` 3 columnas para dispositivos xlarge (1200px ↑)
-`col-lg-2` 2 columnas para dispositivos large (992px ↑)
-`col-md-4` 4 columnas para dispositivo medium (768px ↑)
-`col-sm-5` 5 columnas para dispositivos small (576px ↑)
 `col-7` 7 columnas para dispositivos extra small (575px ↓)
+`col-sm-5` 5 columnas para dispositivos small (576px ↑)
+`col-md-4` 4 columnas para dispositivo medium (768px ↑)
+`col-lg-2` 2 columnas para dispositivos large (992px ↑)
+`col-xl-3` 3 columnas para dispositivos xlarge (1200px ↑)
 
 `my-3` margen vertical de 3 unidades
 
@@ -187,7 +187,7 @@ En el Logo tenemos:
 
 `logotipo` nombre de la clase para su identificacion
 
-En la Botonera tenemos:
+** Descripción Sección Botonera**
 
 ```html
 <!-- BOTONERA -->
@@ -209,8 +209,80 @@ En la Botonera tenemos:
 
 `botonera` nombre de la clase para su identificacion
 
+**Descripción Sección Idiomas e Ingreso** 
+
+```html
+<!-- IDIOMA E INGRESO -->
+
+<div class="col-5 col-sm-7 col-md-8 col-lg-2 col-xl-3 p-0 pt-4">
 
 
+</div>	
+```
+
+`col-5` 5 columnas para dispositivos extra small (575px ↓)
+`col-sm-7` 7 columnas para dispositivos small (576px ↑)
+`col-md-8` 8 columnas para dispositivo medium (768px ↑)
+`col-lg-2` 2 columnas para dispositivos large (992px ↑)
+`col-xl-3` 3 columnas para dispositivos xlarge (1200px ↑)
+
+`p-0` anulamos el paddin en todos los lados
+`pt-4` colocamos paddin top de 4 unidades
+
+#### Detallando el Logo
+
+Una vez que tenemos definida la sección del Logo vamos a meterle contenido, el cual consiste en:
+
+* Menú Hamburguesa
+* Logotipo
+
+```html
+<!-- LOGO -->
+			
+<div class="col-7 col-sm-5 col-md-4 col-lg-2 col-xl-3 my-3 d-flex mt-lg-3 logotipo">
+
+	<i class="fas fa-bars d-block d-lg-none text-white pt-2 pr-2"></i>
+					
+	<a href="index.html">
+		<img data-nite-src="img/logo.png" class="img-fluid pt-1">
+	</a>
+
+</div>
+```
+
+**Descripción Menú Hamburguesa**
+
+Sabemos que para pintar el [icono de bars de fontawesome](https://fontawesome.com/icons/bars) usamos el código:
+
+```html
+<i class="fas fa-bars"></i>
+```
+
+<img src="images/c7/7-2-fabars.png">
+
+Entonces para nuestro menú hamburguesa tenemos:
+
+```html
+<i class="fas fa-bars d-block d-lg-none text-white pt-2 pr-2"></i>
+```
+
+`d-block` visualizar el icono
+`d-lg-none` ocultar el icono apartir de dispositivos large
+`text-white` texto blanco
+`pt-2` padding top de 2 unidades
+`pr-2` padding rigth de 2 unidades
+
+**Descripción Logotipo**
+
+Tenemos una imagen con un enlace a nuestra página `index.htlm`
+```html
+<a href="index.html">
+	<img src="img/logo.png" class="img-fluid pt-1">
+</a>
+```
+
+`img-fluid` La clase `.img-fluid` aplica `max-width: 100%;` y `height: auto;` a la imagen.  La imagen se escalará bien al elemento padre. 
+`pt-1` padding top de 1 unidad
 
 
 
