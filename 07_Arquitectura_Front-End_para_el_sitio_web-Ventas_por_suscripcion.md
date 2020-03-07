@@ -446,7 +446,7 @@ El código se tomo del ejemplo de la documentación y solo se cambiaron los nomb
 		<span class="text-white mx-2">|</span>
 
 		<a href="registro.html" class="text-white">Crear Cuenta</a>
-			
+
 	</button>
 
 </div>
@@ -636,7 +636,7 @@ HEADER
 
 					</div>
 
-				</div>		
+				</div>	
 
 			</div>
 
@@ -683,7 +683,7 @@ header{
 	background:rgba(0,0,0,.1);	// Esto es un Background Negro con un mucha transparencia  (.9 poca transparencia)
 }
 
-.botonera li{	// botonera es la div a la que le pusimos ese nombre, dentro tiene ul y dentro los li
+.botonera li{				// botonera es la div a la que le pusimos ese nombre, dentro tiene ul y dentro los li
 	cursor:pointer;
 }
 
@@ -700,7 +700,120 @@ Veamos los cambios
 
 <img src="images/c7/7-2-menu.png">
 
+Esto no resulve los errores de diseño que habiamos visto en cada tamaño.
 
+### Resolviendo Problemas en el Diseño
+
+#### Opción `EN` del Menú Idiomas se ve muy Grande
+
+<img src="images/c7/7-2-menu-2.png">
+
+Si examinamos el código fuente de este elemento nos indica que tiene la clase `dropdown-item`.
+
+<img src="images/c7/7-2-menu-3.png">
+
+Vamos a cambiar la clase `dropdown-item` así (ponerno en la sección Global):
+
+```css
+.dropdown-menu{
+	min-width:0% !important;	// Mínimo de ancho del 0%, !important indica que la tome como la última propiedad CSS cuando este el navegador abierto
+	padding:0 !important;		// Padding de 0
+	font-size:12px !important;	// Tamaño de letra de 12px 
+}
+```
+
+Con estos cambios la opción ya se ve más pequeña
+
+<img src="images/c7/7-2-menu-4.png">
+
+#### Diseño en las Diferentes Resoluciones
+
+`col-5` 5 columnas para dispositivos extra small (575px ↓)
+`col-sm-7` 7 columnas para dispositivos small (576px ↑)
+`col-md-8` 8 columnas para dispositivo medium (768px ↑)
+`col-lg-2` 2 columnas para dispositivos large (992px ↑)
+`col-xl-3` 3 columnas para dispositivos xlarge (1200px ↑)
+
+#### Resolución 1200 o superior
+
+Si vemos la resolución para un dispositivos xlarge (1200px ↑) paracere que se ve todo bien.
+
+<img src="images/c7/7-2-1200-2.png">
+
+#### Resolución 992 o superior
+
+Vamos a mirar la resolución 1024 x 768 (Tablet Horizontal) , que sería para dispositivos large (992px ↑)
+
+<img src="images/c7/7-2-1024-2.png">
+
+Como vemos esto necesita hacer ajustes en un punto de quiebre para que se vea bien. Si analizamos el código vemos lo siguiente:
+
+<img src="images/c7/7-2-1024-3.png">
+
+Necesitamos crear los puntos de quiebre para cada pantalla:
+
+El Font tiene un tamaño de 14px, una posible solución es reducir el tamaño del Font en esta resolución. Si lo cambiamos a 9px quedaria asi (con 10px queda abajo):
+
+```css
+/*=============================================
+TABLET HORIZONTAL (LG revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	header .ingresos button a{
+	 	font-size:9px;
+	}
+}
+```
+
+<img src="images/c7/7-2-1024-4.png">
+
+Lo malo de esta solución es que el texto en las opciones del botón quedan muy pequeño.
+
+Otra posible solución es reducir el texto del `dropdown` y ampliar el texto en el botón.
+
+```css
+/*=============================================
+TABLET HORIZONTAL (LG revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+   header .idiomas button {
+	font-size:12px;
+   }
+
+   header .ingresos button a{
+ 	font-size:10px;
+   }
+	
+}
+```
+
+Nos queda así:
+
+<img src="images/c7/7-2-1024-5.png">
+
+La anterior solución me parece la más correcta pero vamos a ver la usada en el curso.
+
+```css
+/*=============================================
+TABLET HORIZONTAL (LG revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	header .ingresos button{
+	 	margin-top:-33px;
+	 	padding-bottom:0px;
+	}
+
+	header .ingresos button a{
+	 	font-size:10px;
+	}
+}
+```
 
 ## Hero Image - Cinemagraph 16:13
 ## Construyendo la sección de Cursos 13:41
