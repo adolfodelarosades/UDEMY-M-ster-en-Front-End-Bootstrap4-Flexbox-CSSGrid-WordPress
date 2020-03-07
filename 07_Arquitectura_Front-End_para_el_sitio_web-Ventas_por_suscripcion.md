@@ -95,6 +95,20 @@ Si damos un click en el menú hamburguesa vemos lo siguiente:
 
 <img src="images/c7/7-2-menu-hamburguesa.png">
 
+### Antes de nada recordemos los siguiente:
+
+Grid Classes
+
+El Bootstrap 4 grid system tiene 5 clases:
+
+clase | Descripción
+------|------------
+`.col-` | (extra small devices - ancho de pantalla inferior a 576px)
+`.col-sm-` | (small devices - ancho de pantalla igual o mayor que 576px)
+`.col-md-` | (medium devices - ancho de pantalla igual o mayor que 768px)
+`.col-lg-` | (large devices - ancho de pantalla igual o mayor que 992px)
+`.col-xl-` | (xlarge devices - ancho de pantalla igual o mayor que 1200px)
+
 Vamos a construir esta cabecera.
 
 
@@ -158,21 +172,42 @@ En el Logo tenemos:
 </div>
 ```
 
-`col-xl-3` 3 columnas para pantallas grandes
-`col-lg-2` 2 columnas para pantallas medianas
-`col-md-4` 4 columnas para tablets vertical
-`col-sm-5` 5 columnas para tablet horizontal
-`col-7` 7 columnas para móviles
+`col-xl-3` 3 columnas para dispositivos xlarge (1200px ↑)
+`col-lg-2` 2 columnas para dispositivos large (992px ↑)
+`col-md-4` 4 columnas para dispositivo medium (768px ↑)
+`col-sm-5` 5 columnas para dispositivos small (576px ↑)
+`col-7` 7 columnas para dispositivos extra small (575px ↓)
 
 `my-3` margen vertical de 3 unidades
 
 `d-flex` clase flexbox para poder trabajar con dos elementos (menú hamburguesa y logotipo SOLO EN MOVILES) dentro de esta etiqueta
 
-`mt-lg-4` margen top de 4 unidades para pantallas medianas
-`mt-xl-3` margen top de 3 unidades para pantallas grandes
+`mt-lg-4` margen top de 4 unidades para dispositivos large
+`mt-xl-3` margen top de 3 unidades para dispositivos xlarge
 
 `logotipo` nombre de la clase para su identificacion
 
+En la Botonera tenemos:
+
+```html
+<!-- BOTONERA -->
+
+<div class="d-none d-lg-block col-lg-8 col-xl-6 p-0 pt-4 botonera">
+					
+
+</div>	
+```
+
+`d-none` ocultar en pantallas pequeñas
+`d-lg-block` a partir de dispositivos large se va a visualizar (992px ↑)
+
+`col-lg-8` 8 columnas para dispositivos large (992px ↑)
+`col-xl-6` 6 columnas para dispositivos xlarge (1200px ↑)
+
+`p-0` anulamos el paddin en todos los lados
+`pt-4` colocamos paddin top de 4 unidades
+
+`botonera` nombre de la clase para su identificacion
 
 
 
