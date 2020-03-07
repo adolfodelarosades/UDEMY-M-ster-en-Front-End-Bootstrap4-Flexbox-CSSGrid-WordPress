@@ -113,7 +113,7 @@ HEADER
 
 				<!-- LOGO -->
 			
-				<div class="col-7 col-sm-5 col-md-4 col-lg-2 col-xl-3 my-3 d-flex logotipo mt-lg-4 mt-xl-3">
+				<div class="col-7 col-sm-5 col-md-4 col-lg-2 col-xl-3 my-3 d-flex mt-lg-4 mt-xl-3 logotipo">
 
 
 				</div>
@@ -140,6 +140,43 @@ HEADER
 
 </header>	
 ```
+
+Podemos ver las tres secciones de las que consta el header:
+
+* Logotipo
+* Botonera
+* Idioma e Ingreso
+
+En el Logo tenemos:
+
+```html
+<!-- LOGO -->
+			
+<div class="col-7 col-sm-5 col-md-4 col-lg-2 col-xl-3 my-3 d-flex logotipo mt-lg-4 mt-xl-3">
+
+
+</div>
+```
+
+`col-xl-3` 3 columnas para pantallas grandes
+`col-lg-2` 2 columnas para pantallas medianas
+`col-md-4` 4 columnas para tablets vertical
+`col-sm-5` 5 columnas para tablet horizontal
+`col-7` 7 columnas para móviles
+
+`my-3` margen vertical de 3 unidades
+
+`d-flex` clase flexbox para poder trabajar con dos elementos (menú hamburguesa y logotipo SOLO EN MOVILES) dentro de esta etiqueta
+
+`mt-lg-4` margen top de 4 unidades para pantallas medianas
+`mt-xl-3` margen top de 3 unidades para pantallas grandes
+
+`logotipo` nombre de la clase para su identificacion
+
+
+
+
+
 
 
 ## Hero Image - Cinemagraph 16:13
