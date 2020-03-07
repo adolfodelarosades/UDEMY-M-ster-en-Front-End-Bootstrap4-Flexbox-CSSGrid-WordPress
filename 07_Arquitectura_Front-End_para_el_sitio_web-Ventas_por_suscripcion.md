@@ -284,7 +284,7 @@ Tenemos una imagen con un enlace a nuestra página `index.htlm`
 `img-fluid` La clase `.img-fluid` aplica `max-width: 100%;` y `height: auto;` a la imagen.  La imagen se escalará bien al elemento padre. 
 `pt-1` padding top de 1 unidad
 
-
+####  De
 
 ## Hero Image - Cinemagraph 16:13
 ## Construyendo la sección de Cursos 13:41
