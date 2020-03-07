@@ -33,7 +33,7 @@
 * Videos
 * Crear Estructura del proyecto
 
-<img src="images/c7/7-1-estructura.png">
+   <img src="images/c7/7-1-estructura.png">
 
 #### Consejo para Desarrollar el Diseño
 
