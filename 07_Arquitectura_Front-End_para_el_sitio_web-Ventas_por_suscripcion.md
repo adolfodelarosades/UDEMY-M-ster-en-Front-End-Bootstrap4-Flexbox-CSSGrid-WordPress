@@ -394,11 +394,89 @@ Dentro de esta sección de Idiomas e Ingreso tendremos dos bloques uno para Idim
 	</div>
 
 </div>	
-
-
 ```
 
+##### Bloque Idioma
 
+```html
+<!-- IDIOMA -->
+					
+<div class="ml-xl-4 float-left mt-lg-1 d-none d-lg-block">
+
+	<div class="dropdown">
+
+		<button type="button" class="btn btn-light btn-sm dropdown-toggle" data-toggle="dropdown">
+		ES
+		</button>
+
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">EN</a>
+		</div>
+
+	</div>
+
+</div>
+```
+
+El Idioma es una división con las seguientes características:
+
+`ml-xl-4` 4 unidades de margin left para dispositivos xlarge (1200px ↑)
+`float-left` divisisión que flota a la izquierda
+`mt-lg-1` 1 unidad de margin top para dispositivos large (992px ↑)
+`d-none` se oculta en dispositivos
+`d-lg-block` se muestra a partir de dispositivos large (992px ↑)
+
+Tiene un `dropdown` [Bootstrap 4 Dropdowns](https://www.w3schools.com/bootstrap4/bootstrap_dropdowns.asp)
+
+Un `dropdown` (menú desplegable) es un menú que permite al usuario elegir un valor de una lista predefinida.
+
+El código se tomo del ejemplo de la documentación y solo se cambiaron los nombres de las opciones `ES`, `EN`.
+
+##### Bloque Ingreo
+
+```html
+<!-- INGRESO -->
+
+<div class="mr-2 mr-lg-0 float-right pt-1 ingresos">
+						
+	<button class="btn btn-info btn-sm d-flex">
+							
+		<a href="ingreso.html" class="text-white">Ingresar</a>
+
+		<span class="text-white mx-2">|</span>
+
+		<a href="registro.html" class="text-white">Crear Cuenta</a>
+			
+	</button>
+
+</div>
+```
+
+Este bloque de Ingreso es una división con las siguientes caracteristicas:
+
+`mr-2` margin right de 2 unidades
+`mr-lg-0` margin right de 0 unidades para dispositivos large (992px ↑)
+`float-right` división que flotara a la derecha
+`pt-1` pading top de 1 unidad
+`ingresos` nombre del bloque
+
+Dentro contiene un botón [Bootstrap 4 Buttons](https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp):
+
+
+
+```html
+<button class="btn btn-info btn-sm d-flex">
+							
+	<a href="ingreso.html" class="text-white">Ingresar</a>
+
+	<span class="text-white mx-2">|</span>
+
+	<a href="registro.html" class="text-white">Crear Cuenta</a>
+			
+</button>
+```
+
+Usamos `d-flex` dentro del botón por que tenemos tres elementos `Ingresos | Crear Cuenta`
 
 
 ## Hero Image - Cinemagraph 16:13
