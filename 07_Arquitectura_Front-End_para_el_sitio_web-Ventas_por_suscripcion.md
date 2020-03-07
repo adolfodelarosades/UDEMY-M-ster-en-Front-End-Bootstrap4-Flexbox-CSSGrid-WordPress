@@ -462,8 +462,6 @@ Este bloque de Ingreso es una división con las siguientes caracteristicas:
 
 Dentro contiene un botón [Bootstrap 4 Buttons](https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp):
 
-
-
 ```html
 <button class="btn btn-info btn-sm d-flex">
 							
@@ -478,6 +476,198 @@ Dentro contiene un botón [Bootstrap 4 Buttons](https://www.w3schools.com/bootst
 
 Usamos `d-flex` dentro del botón por que tenemos tres elementos `Ingresos | Crear Cuenta`
 
+### Visualizar lo Construido Hasta el Momento.
+
+Vamos a visualizar el código construido hasta el momento, solo cabe aclarar que se le ha puesto un color de fondo al encabezado para poder visualizar el texto de las opciones de la botonera. El código completo es el siguiente:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Academy of life</title>
+
+	<link rel="icon" href="img/icono.png">
+
+	<!--=====================================
+	VÍNCULOS CSS
+	======================================-->
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<!-- Fuente Open Sans -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:100|Grand+Hotel" rel="stylesheet">
+
+	<!-- Hoja Estilo Personalizada -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--=====================================
+	VÍNCULOS JAVASCRIPT
+	======================================-->
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<!-- https://easings.net/es# -->
+	<script src="js/plugins/jquery.easing.js"></script>
+
+	<!-- https://markgoodyear.com/labs/scrollup/ -->
+	<script src="js/plugins/scrollUP.js"></script>
+
+	<!-- https://www.jqueryscript.net/loading/Handle-Loading-Progress-jQuery-Nite-Preloader.html -->
+	<script src="js/plugins/jquery.nite.preloader.js"></script>
+
+</head>
+
+<body>
+
+<!--=====================================
+HEADER
+======================================-->
+
+<header>
+
+	<div class="container-fluid bg-primary">
+		
+		<div class="container p-0">
+
+			<div class="row">
+
+				<!-- LOGO -->
+			
+				<div class="col-7 col-sm-5 col-md-4 col-lg-2 col-xl-3 my-3 d-flex mt-lg-4 mt-xl-3 logotipo">
+
+					<i class="fas fa-bars d-block d-lg-none text-white pt-2 pr-2"></i>
+					
+					<a href="index.html">
+						<img src="img/logo.png" class="img-fluid pt-1">
+					</a>
+
+				</div>
+
+				<!-- BOTONERA -->
+
+				<div class="d-none d-lg-block col-lg-8 col-xl-6 p-0 pt-lg-2 mt-lg-1 pt-xl-4 botonera">
+					
+					<ul class="nav justify-content-lg-left justify-content-xl-end">
+						
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#cursos">Cursos</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#nosotros">Nosotros</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#testimonios">Testimonios</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#planes">Planes</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#faq">FAQ</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#">Blog</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#contactenos">Contáctenos</a>
+						</li>
+
+					</ul>
+
+				</div>	
+
+				<!-- IDIOMA E INGRESO -->
+
+				<div class="col-5 col-sm-7 col-md-8 col-lg-2 col-xl-3 p-0 pt-4 pt-lg-2 mt-lg-1 pt-xl-4">
+
+					<!-- IDIOMA -->
+					
+					<div class="ml-xl-4 float-left mt-lg-1 d-none d-lg-block">
+
+						<div class="dropdown">
+
+							<button type="button" class="btn btn-light btn-sm dropdown-toggle" data-toggle="dropdown">
+							ES
+							</button>
+
+							<div class="dropdown-menu">
+
+								<a class="dropdown-item" href="#">EN</a>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- INGRESO -->
+
+					<div class="mr-2 mr-lg-0 float-right pt-1 ingresos">
+						
+						<button class="btn btn-info btn-sm d-flex">
+							
+							<a href="ingreso.html" class="text-white">Ingresar</a>
+
+							<span class="text-white mx-2">|</span>
+
+							<a href="registro.html" class="text-white">Crear Cuenta</a>
+
+						</button>
+
+					</div>
+
+				</div>		
+
+			</div>
+
+		</div>
+
+	</div>
+
+</header>	
+
+
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
+````
+
+Las pantallas de salida son:
+
+<img src="images/c7/7-2-1200-1.png">
+
+<img src="images/c7/7-2-992-1.png">
+
+<img src="images/c7/7-2-768-1.png">
+
+<img src="images/c7/7-2-576-1.png">
+
+<img src="images/c7/7-2-320-1.png">
 
 ## Hero Image - Cinemagraph 16:13
 ## Construyendo la sección de Cursos 13:41
