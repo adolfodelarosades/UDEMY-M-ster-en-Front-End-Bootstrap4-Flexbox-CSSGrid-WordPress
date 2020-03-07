@@ -21,11 +21,13 @@
 
 ### Etapa 1 Diseño y Planeación
 
-* Brief
+* [Brief](https://github.com/adolfodelarosades/UDEMY-M-ster-en-Front-End-Bootstrap4-Flexbox-CSSGrid-WordPress/blob/master/pdf/Brief%20y%20Concepto%20-%20ventas%20por%20suscripci%C2%A2n.pdf)
 * Site Map
-* Wireframe
-* Wireframe para móviles
-* Layout
+   <img src="images/c0/Sitemap.png">
+* [Wireframe PC](https://marvelapp.com/eggg919/screen/48145028)
+* [Wireframe para móviles](https://marvelapp.com/44j77e0/screen/48223352)
+* [Layout PC](https://marvelapp.com/eggg919/screen/48785985)
+* [Layout Móvil](https://marvelapp.com/44j77e0/screen/48787885)
 * Imagenes optimizadas con [tinypng](https://tinypng.com/)
 * Videos
 * Crear Estructura del proyecto
@@ -76,8 +78,25 @@ a:visited, a:link, a:focus, a:hover, a:active{
 }
 ```
 
-
 ## Construyendo el Header 19:47
+
+
+Si observo el [Layout PC](https://marvelapp.com/eggg919/screen/48785985) el header consta de 3 partes:
+
+<img src="images/c7/7-2-header.png">
+
+En el [Layout Móvil](https://marvelapp.com/44j77e0/screen/48787885) podemos ver que para el Móvil el header cambia:
+
+<img src="images/c7/7-2-header-2.png">
+
+Si damos un click en el menú hamburguesa vemos lo siguiente:
+
+<img src="images/c7/7-2-menu-hamburguesa.png">
+
+Vamos a construir esta cabecera.
+
+
+
 ## Hero Image - Cinemagraph 16:13
 ## Construyendo la sección de Cursos 13:41
 ## Construyendo la sección de Nosotros 02:13
