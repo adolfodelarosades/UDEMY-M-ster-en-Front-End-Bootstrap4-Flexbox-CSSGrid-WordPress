@@ -878,6 +878,40 @@ Finalmente queda así:
 
 <img src="images/c7/7-2-768-5.png">
 
+**Cabe hacer notar que a partir de esta resolución ya aparece el Menú de Hamburguesa**
+
+#### Problemas en Resolución 576px o superior Probar con 576 x 320  (Movil Horizontal)
+
+Podemos ver como se ve actualmente la página en esta resolución:
+
+<img src="images/c7/7-2-576-2.png">
+
+Aparentemente se ve bien, tal vez un poco abajo las opciones, vamos a crear el punto de quiebre de esta resolución:
+
+```css
+/*=============================================
+MÓVIL HORIZONTAL (SM revisamos en 576px)
+=============================================*/
+
+@media (max-width:767px) and (min-width:576px){
+
+	header .ingresos button{
+	 	margin-top:-10px;	// Subir 10 pixeles el botón
+	 	padding-bottom:0px;	// Qitar padding inferior
+	 }
+
+
+	 header .ingresos button a, span{
+	 	font-size:14px;		// Reducir el texto de 18px a 14px
+	 	padding-bottom:5px;	// Padding inferior de 5px
+	 }
+
+}
+```
+
+El resultado final es:
+
+<img src="images/c7/7-2-576-3.png">
 
 `col-5` 5 columnas para dispositivos extra small (575px ↓)
 `col-sm-7` 7 columnas para dispositivos small (576px ↑)
